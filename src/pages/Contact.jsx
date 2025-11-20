@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSlider from "../components/HeroSlider";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const to = "SOUTHERNBLVDPHARMACY@GMAIL.COM";
+    const subject = "Website Contact Form Submission";
+    const body = `Full Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`;
+
+    const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="bg-gradient-to-b from-white to-[#F8FAFB] text-gray-800">
 
@@ -109,13 +133,17 @@ export default function Contact() {
             <div className="w-full max-w-md mx-auto p-4 sm:p-6 md:p-8 bg-gradient-to-br from-[#0FA47F]/5 to-[#1A73E8]/5 rounded-2xl shadow-lg h-full">
               <h3 className="text-xl sm:text-2xl font-bold text-[#0FA47F] mb-6 text-center sm:text-left">Send Us a Message</h3>
 
-              <form className="space-y-5 sm:space-y-6">
+              <form className="space-y-5 sm:space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block font-semibold text-gray-700 mb-2">Full Name</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0FA47F] focus:border-transparent transition-all duration-300"
                     placeholder="Enter your name"
+                    required
                   />
                 </div>
 
@@ -123,8 +151,12 @@ export default function Contact() {
                   <label className="block font-semibold text-gray-700 mb-2">Email Address</label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0FA47F] focus:border-transparent transition-all duration-300"
                     placeholder="Enter your email"
+                    required
                   />
                 </div>
 
@@ -132,6 +164,9 @@ export default function Contact() {
                   <label className="block font-semibold text-gray-700 mb-2">Phone Number</label>
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0FA47F] focus:border-transparent transition-all duration-300"
                     placeholder="Enter your phone number"
                   />
@@ -141,12 +176,19 @@ export default function Contact() {
                   <label className="block font-semibold text-gray-700 mb-2">Message</label>
                   <textarea
                     rows="5"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0FA47F] focus:border-transparent transition-all duration-300"
                     placeholder="Write your message..."
+                    required
                   ></textarea>
                 </div>
 
-                <button className="w-full max-w-xs mx-auto block py-3 sm:py-4 bg-[#0FA47F] text-white font-semibold rounded-lg hover:bg-[#0C8E6C] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                <button
+                  type="submit"
+                  className="w-full max-w-xs mx-auto block py-3 sm:py-4 bg-[#0FA47F] text-white font-semibold rounded-lg hover:bg-[#0C8E6C] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                >
                   Send Message
                 </button>
               </form>
