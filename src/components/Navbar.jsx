@@ -47,7 +47,7 @@ export default function Navbar() {
             <img 
               src={logo}
               alt="Southern BLVD Pharmacy Logo" 
-              className="h-10 w-auto mr-3 hidden md:block"
+              className="h-9 w-auto mr-2"
             />
           </div>
         </Link>

@@ -29,7 +29,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 h-full">
+            <div className="w-full max-w-md mx-auto bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 h-full">
               <h3 className="text-2xl font-bold text-[#0FA47F] mb-6">Contact Information</h3>
 
               <div className="space-y-6">
@@ -105,11 +105,11 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="p-8 bg-gradient-to-br from-[#0FA47F]/5 to-[#1A73E8]/5 rounded-2xl shadow-lg h-full">
-              <h3 className="text-2xl font-bold text-[#0FA47F] mb-6">Send Us a Message</h3>
+          <div className="animate-fade-in-up w-full" style={{ animationDelay: '0.2s' }}>
+            <div className="w-full max-w-md mx-auto p-4 sm:p-6 md:p-8 bg-gradient-to-br from-[#0FA47F]/5 to-[#1A73E8]/5 rounded-2xl shadow-lg h-full">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0FA47F] mb-6 text-center sm:text-left">Send Us a Message</h3>
 
-              <form className="space-y-6">
+              <form className="space-y-5 sm:space-y-6">
                 <div>
                   <label className="block font-semibold text-gray-700 mb-2">Full Name</label>
                   <input
@@ -146,7 +146,7 @@ export default function Contact() {
                   ></textarea>
                 </div>
 
-                <button className="w-full py-4 bg-[#0FA47F] text-white font-semibold rounded-lg hover:bg-[#0C8E6C] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                <button className="w-full max-w-xs mx-auto block py-3 sm:py-4 bg-[#0FA47F] text-white font-semibold rounded-lg hover:bg-[#0C8E6C] transition transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                   Send Message
                 </button>
               </form>
@@ -156,7 +156,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full bg-gradient-to-r from-[#1A73E8] to-[#0FA47F] py-20 animate-fade-in-up">
+      <section className="w-full bg-gradient-to-r from-[#1A73E8] to-[#0FA47F] pt-16 pb-10 md:py-20 animate-fade-in-up">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-block px-4 py-1 bg-white/20 text-white rounded-full text-sm font-semibold mb-4">
@@ -194,7 +194,7 @@ export default function Contact() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 text-center bg-white animate-fade-in-up">
+      <section className="pt-10 pb-20 md:py-20 text-center bg-white animate-fade-in-up">
         <div className="max-w-4xl mx-auto px-6">
           <h3 className="text-3xl font-bold text-[#0FA47F] mb-6">
             We're here to support your healthcare journey.

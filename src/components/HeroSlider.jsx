@@ -60,7 +60,7 @@ const HeroSlider = () => {
       </div>
 
       {/* Slides Container */}
-      <div className="w-full h-[500px] md:h-[650px] relative">
+      <div className="w-full h-[360px] sm:h-[420px] md:h-[650px] relative">
         {slides.map((slide, index) => (
           <div 
             key={index}
@@ -84,8 +84,8 @@ const HeroSlider = () => {
             
             {/* Hero Text Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 px-4">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">{slides[index].title}</h1>
-              <p className="text-xl md:text-2xl font-light max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up">{slides[index].title}</h1>
+              <p className="text-base sm:text-lg md:text-2xl font-light max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 {slides[index].subtitle}
               </p>
             </div>

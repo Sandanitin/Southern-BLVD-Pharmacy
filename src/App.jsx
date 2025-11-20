@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50">
+      <div className="flex flex-col min-h-screen bg-gray-50 w-full overflow-x-hidden">
         {/* Navbar */}
         <Navbar />
         
