@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,9 +43,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center animate-fade-in-down">
-          <h1 className="text-2xl font-bold text-[#0FA47F] tracking-tight">
-            Southern<span className="text-[#1A73E8]">BLVD</span> Pharmacy
-          </h1>
+          <div className="flex items-center">
+            <img 
+              src={logo}
+              alt="Southern BLVD Pharmacy Logo" 
+              className="h-10 w-auto mr-3 hidden md:block"
+            />
+          </div>
         </Link>
 
         {/* Desktop Menu */}

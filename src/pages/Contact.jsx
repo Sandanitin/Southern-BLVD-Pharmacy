@@ -168,7 +168,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.442153314458!2d-73.8950987!3d40.8245569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f5e2810fe389%3A0x89c2f5e2810fe389!2s990%20Southern%20Blvd%2C%20Bronx%2C%20NY%2010459!5e0!3m2!1sen!2sus!4v1678823456789"
@@ -177,7 +177,18 @@ export default function Contact() {
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+              <a 
+                href="https://maps.app.goo.gl/gio2fraN7t4PXpjVA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-[#0FA47F] text-white font-semibold rounded-lg shadow-lg hover:bg-[#0C8E6C] transition transform hover:-translate-y-1 text-lg"
+              >
+                View Larger Map
+              </a>
+            </div>
           </div>
         </div>
       </section>

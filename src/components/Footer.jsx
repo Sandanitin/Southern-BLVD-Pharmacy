@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,24 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Logo & Intro */}
         <div className="animate-fade-in-up">
-          <h2 className="text-2xl font-bold mb-4">
-            Southern<span className="text-white">BLVD</span> Pharmacy
-          </h2>
+          <div className="flex items-center mb-4">
+            <img 
+              src={logo}
+              alt="Southern BLVD Pharmacy Logo" 
+              className="h-12 w-auto mr-3 hidden md:block"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.querySelector('h2').classList.remove('hidden');
+              }}
+              onLoad={(e) => {
+                e.target.style.display = 'block';
+                e.target.parentElement.querySelector('h2').classList.add('hidden');
+              }}
+            />
+            <h2 className="text-2xl font-bold text-white hidden">
+              Southern<span className="text-white">BLVD</span> Pharmacy
+            </h2>
+          </div>
           <p className="text-sm text-white/90 leading-relaxed mb-6">
             Providing trusted healthcare solutions and high-quality pharmacy 
             services to support your well-being.
