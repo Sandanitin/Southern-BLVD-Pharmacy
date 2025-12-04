@@ -33,9 +33,9 @@ export default function About() {
           <h2 className="text-3xl font-bold text-[#0FA47F] mb-6">Your Trusted Healthcare Partner</h2>
 
           <p className="text-lg leading-relaxed mb-4">
-            <span className="font-semibold">Southern BLVD Pharmacy</span> is your new neighborhood 
-            pharmacy located at 990 Southern Blvd, Bronx, NY. We're committed to providing personalized 
-            care that goes beyond prescriptions with compassion and expertise.
+            <span className="font-semibold">Southern BLVD Pharmacy</span> is your trusted neighborhood 
+            pharmacy located at 990 Southern Blvd, Bronx, NY 10459. We're committed to providing personalized 
+            healthcare services that go beyond prescription fulfillment with compassion, expertise, and community-focused care.
           </p>
 
           <p className="text-lg leading-relaxed mb-4">

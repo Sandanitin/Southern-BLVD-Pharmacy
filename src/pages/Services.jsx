@@ -24,7 +24,9 @@ export default function Services() {
             Comprehensive Healthcare Solutions
           </h2>
           <p className="text-gray-600 text-lg">
-            We offer a wide range of pharmacy services designed to keep you healthy and informed.
+            We offer a comprehensive range of pharmacy services in Bronx, NY designed to keep you healthy and informed. 
+            From prescription management to immunizations and health screenings, our experienced pharmacists provide 
+            personalized care tailored to your healthcare needs.
           </p>
         </div>
 

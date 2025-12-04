@@ -22,10 +22,10 @@ export default function Home() {
           </div>
           <h2 className="text-3xl font-bold text-[#0FA47F] mb-4 animate-fade-in-up">Your Trusted Healthcare Partner</h2>
           <p className="text-gray-600 leading-relaxed text-lg mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            SOUTHERN BLVD PHARMACY is your new neighborhood pharmacy, offering 
-            competitive discounts, free deliveries, and hassle-free prescription 
-            transfers. We're here to provide better service to Rite Aid customers 
-            and the entire community.
+            SOUTHERN BLVD PHARMACY is your trusted neighborhood pharmacy in Bronx, NY, offering 
+            competitive discounts, free home deliveries, and hassle-free prescription 
+            transfers. We're committed to providing exceptional healthcare services to former Rite Aid customers 
+            and the entire Bronx community with personalized care and professional expertise.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>

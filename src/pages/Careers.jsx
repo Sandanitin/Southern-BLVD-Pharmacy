@@ -77,7 +77,9 @@ export default function Careers() {
           </div>
           <h2 className="text-3xl font-bold text-[#0FA47F] mb-6">Our Work Culture</h2>
           <p className="text-gray-600 text-lg">
-            A supportive environment where you can grow and make a difference
+            Join Southern BLVD Pharmacy in Bronx, NY, where you can grow professionally while making a meaningful 
+            difference in your community's healthcare. We offer a supportive environment that values compassion, 
+            professionalism, and continuous learning.
           </p>
         </div>
 

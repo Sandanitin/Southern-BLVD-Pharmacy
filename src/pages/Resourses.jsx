@@ -22,7 +22,9 @@ export default function Resources() {
           </div>
           <h2 className="text-3xl font-bold text-[#0FA47F] mb-6">Educational Categories</h2>
           <p className="text-gray-600 text-lg">
-            Explore our comprehensive health education resources
+            Explore our comprehensive health education resources and wellness guides from Southern BLVD Pharmacy in Bronx, NY. 
+            Find valuable information about medication safety, chronic disease management, immunizations, and healthy living 
+            to support your healthcare journey.
           </p>
         </div>
 

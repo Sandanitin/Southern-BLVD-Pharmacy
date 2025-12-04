@@ -19,7 +19,12 @@ export default function Contact() {
 
     const to = "SOUTHERNBLVDPHARMACY@GMAIL.COM";
     const subject = "Website Contact Form Submission";
-    const body = `Full Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`;
+    const body = `Full Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+Message:
+${formData.message}`;
 
     const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
@@ -46,7 +51,9 @@ export default function Contact() {
           </div>
           <h2 className="text-3xl font-bold text-[#0FA47F] mb-6">Get in Touch</h2>
           <p className="text-gray-600 text-lg">
-            Reach out to us for inquiries, prescription assistance, health advice, or general questions.
+            Reach out to Southern BLVD Pharmacy in Bronx, NY for prescription assistance, health advice, 
+            immunization services, or general healthcare inquiries. Our experienced pharmacists are here to 
+            provide personalized support for all your medication and wellness needs.
           </p>
         </div>
 
